@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Humidity vs Latitude</title>
   <link rel="stylesheet" type="text/css" href="Resources/bootstrap.min.css">
-
 </head>
 
 <body>
@@ -40,6 +39,57 @@
 
     
 
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col py-3">
+            <h3 class="text-primary display-4">&nbsp;&nbsp;<strong>Humidity</strong></h3>
+            <hr>
+            <img class="img-fluid ms-5" src="Resources/images/Fig2.png" width="800" height="550">
+            <p class="ms-5 ps-5 text-wrap" style="max-width: 48rem;">
+                The analysis for latitude vs. humidity as expected has a large amount of points at the max y value of 100% across all
+                latitudes. All of the points below that seem to spread out randomly across latitudes, but I think it is worth noting 
+                that the majority of the points are above 60% humidity; suggesting that as a whole the earth is more humid than arid.
+                Another interesting thing of note is the clump of points in the bottom right of the graph showing a not inconsequential
+                number of cities with a high positive latitude that are 0% humid. Considering there are also points at those latitudes
+                that have a range of humidities from 40% - 100%, the next analysis I want to conduct is to extract those points with 
+                0% humidity and find out if their longitudes are similar or if they are separated across the globe.
+            </p>
+        </div>
+        <div class="col-auto bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Visualizations</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="https://henrypoe.github.io/web-design-challenge/temperature">Max Temperature</a>
+                        <a class="nav-link" href="https://henrypoe.github.io/web-design-challenge/temperature">
+                            <img src="Resources/images/Fig1.png" width="250" height="172">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="https://henrypoe.github.io/web-design-challenge/humidity">Humidity</a>
+                        <a class="nav-link border border-2 border-primary" href="https://henrypoe.github.io/web-design-challenge/humidity">
+                            <img src="Resources/images/Fig2.png" width="250" height="172">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="https://henrypoe.github.io/web-design-challenge/cloudiness">Cloudiness</a>
+                        <a class="nav-link" href="https://henrypoe.github.io/web-design-challenge/cloudiness">
+                            <img src="Resources/images/Fig3.png" width="250" height="172">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="https://henrypoe.github.io/web-design-challenge/wind-speed">Wind Speed</a>
+                        <a class="nav-link" href="https://henrypoe.github.io/web-design-challenge/wind-speed">
+                            <img src="Resources/images/Fig4.png" width="250" height="172">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
